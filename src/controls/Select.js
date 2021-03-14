@@ -26,7 +26,13 @@ const Select = (props) => {
       {...(error && { error: true })}
     >
       <InputLabel>{label}</InputLabel>
-      <MuiSelect label={label} name={name} value={value} onChange={onChange}>
+      <MuiSelect
+        label={label}
+        name={name}
+        value={value}
+        onChange={onChange}
+        {...other}
+      >
         {options.map((item) => (
           <MenuItem key={item.id} value={item.id}>
             {" "}
