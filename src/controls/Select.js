@@ -35,8 +35,7 @@ const Select = (props) => {
       >
         {options.map((item) => (
           <MenuItem key={item.id} value={item.id}>
-            {" "}
-            {item.title}{" "}
+            {item.title}
           </MenuItem>
         ))}
       </MuiSelect>
